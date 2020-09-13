@@ -8,6 +8,8 @@ namespace LoneSurvivor
     {
         [Description("Is the plugin enabled?")]
         public bool IsEnabled { get; set; } = true;
+        [Description("Should the plugin use Hints instead of Broadcasts?")]
+        public bool UseHints { get; set; } = false;
         [Description("How long should the message last?")]
         public ushort BroadcastDuration { get; set; } = 10;
         [Description("Possible messages Class-D can see when they're the last alive")]

@@ -38,7 +38,13 @@ namespace LoneSurvivor.Handlers
                     if (cdnum == 1 && cdlast != null)
                     {
                         int index = new System.Random().Next(EPlugin.Instance.Config.ClassDMessages.Count);
-                        cdlast.Broadcast(EPlugin.Instance.Config.BroadcastDuration, EPlugin.Instance.Config.ClassDMessages[index]);
+                        if (EPlugin.Instance.Config.UseHints != false)
+                        {
+                            cdlast.Broadcast(EPlugin.Instance.Config.BroadcastDuration, EPlugin.Instance.Config.ClassDMessages[index]);
+                        } else
+                        {
+                            cdlast.ShowHint(EPlugin.Instance.Config.ClassDMessages[index], EPlugin.Instance.Config.BroadcastDuration);
+                        }
                     }
                     break;
                 case Team.RSC:
@@ -55,7 +61,14 @@ namespace LoneSurvivor.Handlers
                     if (scnum == 1 && sclast != null)
                     {
                         int index = new System.Random().Next(EPlugin.Instance.Config.ScientistMessages.Count);
-                        sclast.Broadcast(EPlugin.Instance.Config.BroadcastDuration, EPlugin.Instance.Config.ScientistMessages[index]);
+                        if (EPlugin.Instance.Config.UseHints != false)
+                        {
+                            sclast.Broadcast(EPlugin.Instance.Config.BroadcastDuration, EPlugin.Instance.Config.ScientistMessages[index]);
+                        }
+                        else
+                        {
+                            sclast.ShowHint(EPlugin.Instance.Config.ScientistMessages[index], EPlugin.Instance.Config.BroadcastDuration);
+                        }
                     }
                     break;
                 case Team.MTF:
@@ -72,7 +85,14 @@ namespace LoneSurvivor.Handlers
                     if (mtfnum == 1 && mtflast != null)
                     {
                         int index = new System.Random().Next(EPlugin.Instance.Config.MTFMessages.Count);
-                        mtflast.Broadcast(EPlugin.Instance.Config.BroadcastDuration, EPlugin.Instance.Config.MTFMessages[index]);
+                        if (EPlugin.Instance.Config.UseHints != false)
+                        {
+                            mtflast.Broadcast(EPlugin.Instance.Config.BroadcastDuration, EPlugin.Instance.Config.MTFMessages[index]);
+                        }
+                        else
+                        {
+                            mtflast.ShowHint(EPlugin.Instance.Config.MTFMessages[index], EPlugin.Instance.Config.BroadcastDuration);
+                        }
                     }
                     break;
                 case Team.CHI:
@@ -89,7 +109,14 @@ namespace LoneSurvivor.Handlers
                     if (chinum == 1 && chilast != null)
                     {
                         int index = new System.Random().Next(EPlugin.Instance.Config.ChaosMessages.Count);
-                        chilast.Broadcast(EPlugin.Instance.Config.BroadcastDuration, EPlugin.Instance.Config.ChaosMessages[index]);
+                        if (EPlugin.Instance.Config.UseHints != false)
+                        {
+                            chilast.Broadcast(EPlugin.Instance.Config.BroadcastDuration, EPlugin.Instance.Config.ChaosMessages[index]);
+                        }
+                        else
+                        {
+                            chilast.ShowHint(EPlugin.Instance.Config.ChaosMessages[index], EPlugin.Instance.Config.BroadcastDuration);
+                        }
                     }
                     break;
                 case Team.SCP:
@@ -106,7 +133,14 @@ namespace LoneSurvivor.Handlers
                     if (scpnum == 1 && scplast != null)
                     {
                         int index = new System.Random().Next(EPlugin.Instance.Config.ScpMessages.Count);
-                        scplast.Broadcast(EPlugin.Instance.Config.BroadcastDuration, EPlugin.Instance.Config.ScpMessages[index]);
+                        if (EPlugin.Instance.Config.UseHints != false)
+                        {
+                            scplast.Broadcast(EPlugin.Instance.Config.BroadcastDuration, EPlugin.Instance.Config.ScpMessages[index]);
+                        }
+                        else
+                        {
+                            scplast.ShowHint(EPlugin.Instance.Config.ScpMessages[index], EPlugin.Instance.Config.BroadcastDuration);
+                        }
                     }
                     break;
                 case Team.TUT:
@@ -123,7 +157,14 @@ namespace LoneSurvivor.Handlers
                     if (tutnum == 1 && tutlast != null)
                     {
                         int index = new System.Random().Next(EPlugin.Instance.Config.TutorialMessages.Count);
-                        tutlast.Broadcast(EPlugin.Instance.Config.BroadcastDuration, EPlugin.Instance.Config.TutorialMessages[index]);
+                        if (EPlugin.Instance.Config.UseHints != false)
+                        {
+                            tutlast.Broadcast(EPlugin.Instance.Config.BroadcastDuration, EPlugin.Instance.Config.TutorialMessages[index]);
+                        }
+                        else
+                        {
+                            tutlast.ShowHint(EPlugin.Instance.Config.TutorialMessages[index], EPlugin.Instance.Config.BroadcastDuration);
+                        }
                     }
                     break;
                 case Team.RIP:
@@ -140,7 +181,14 @@ namespace LoneSurvivor.Handlers
                     if (ripnum == 1 && riplast != null)
                     {
                         int index = new System.Random().Next(EPlugin.Instance.Config.SpectatorMessages.Count);
-                        riplast.Broadcast(EPlugin.Instance.Config.BroadcastDuration, EPlugin.Instance.Config.SpectatorMessages[index]);
+                        if (EPlugin.Instance.Config.UseHints != false)
+                        {
+                            riplast.Broadcast(EPlugin.Instance.Config.BroadcastDuration, EPlugin.Instance.Config.SpectatorMessages[index]);
+                        }
+                        else
+                        {
+                            riplast.ShowHint(EPlugin.Instance.Config.SpectatorMessages[index], EPlugin.Instance.Config.BroadcastDuration);
+                        }
                     }
                     break;
             }
