@@ -43,7 +43,7 @@ namespace LoneSurvivor.Handlers
                             cdlast.Broadcast(EPlugin.Instance.Config.BroadcastDuration, EPlugin.Instance.Config.ClassDMessages[index]);
                         } else
                         {
-                            cdlast.ShowHint(EPlugin.Instance.Config.ClassDMessages[index], EPlugin.Instance.Config.BroadcastDuration);
+                            cdlast.ShowHint($"\n\n\n\n{EPlugin.Instance.Config.ClassDMessages[index]}", EPlugin.Instance.Config.BroadcastDuration);
                         }
                     }
                     break;
@@ -67,7 +67,7 @@ namespace LoneSurvivor.Handlers
                         }
                         else
                         {
-                            sclast.ShowHint(EPlugin.Instance.Config.ScientistMessages[index], EPlugin.Instance.Config.BroadcastDuration);
+                            sclast.ShowHint($"\n\n\n\n{EPlugin.Instance.Config.ScientistMessages[index]}", EPlugin.Instance.Config.BroadcastDuration);
                         }
                     }
                     break;
@@ -91,7 +91,7 @@ namespace LoneSurvivor.Handlers
                         }
                         else
                         {
-                            mtflast.ShowHint(EPlugin.Instance.Config.MTFMessages[index], EPlugin.Instance.Config.BroadcastDuration);
+                            mtflast.ShowHint($"\n\n\n\n{EPlugin.Instance.Config.MTFMessages[index]}", EPlugin.Instance.Config.BroadcastDuration);
                         }
                     }
                     break;
@@ -115,7 +115,7 @@ namespace LoneSurvivor.Handlers
                         }
                         else
                         {
-                            chilast.ShowHint(EPlugin.Instance.Config.ChaosMessages[index], EPlugin.Instance.Config.BroadcastDuration);
+                            chilast.ShowHint($"\n\n\n\n{EPlugin.Instance.Config.ChaosMessages[index]}", EPlugin.Instance.Config.BroadcastDuration);
                         }
                     }
                     break;
@@ -139,7 +139,7 @@ namespace LoneSurvivor.Handlers
                         }
                         else
                         {
-                            scplast.ShowHint(EPlugin.Instance.Config.ScpMessages[index], EPlugin.Instance.Config.BroadcastDuration);
+                            scplast.ShowHint($"\n\n\n\n{EPlugin.Instance.Config.ScpMessages[index]}", EPlugin.Instance.Config.BroadcastDuration);
                         }
                     }
                     break;
@@ -163,7 +163,7 @@ namespace LoneSurvivor.Handlers
                         }
                         else
                         {
-                            tutlast.ShowHint(EPlugin.Instance.Config.TutorialMessages[index], EPlugin.Instance.Config.BroadcastDuration);
+                            tutlast.ShowHint($"\n\n\n\n{EPlugin.Instance.Config.TutorialMessages[index]}", EPlugin.Instance.Config.BroadcastDuration);
                         }
                     }
                     break;
@@ -187,7 +187,7 @@ namespace LoneSurvivor.Handlers
                         }
                         else
                         {
-                            riplast.ShowHint(EPlugin.Instance.Config.SpectatorMessages[index], EPlugin.Instance.Config.BroadcastDuration);
+                            riplast.ShowHint($"\n\n\n\n{EPlugin.Instance.Config.SpectatorMessages[index]}", EPlugin.Instance.Config.BroadcastDuration);
                         }
                     }
                     break;
